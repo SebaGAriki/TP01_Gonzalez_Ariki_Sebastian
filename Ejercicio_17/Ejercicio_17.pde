@@ -29,10 +29,10 @@ void dibujarCofre(){
 }
 
 void calcularDistanciaLinkCofre(){
-  distanciaLinkCofre = pow(pow((posicionCofre.x - posicionLink.x), 2) + pow((posicionCofre.y - posicionLink.y), 2), 2);
+  distanciaLinkCofre = pow(pow((posicionCofre.x - posicionLink.x), 2) + pow((posicionCofre.y - posicionLink.y), 2), 0.5);
   println("Distancia entre Link y el Cofre: " + distanciaLinkCofre);
   line(posicionLink.x, posicionLink.y, posicionCofre.x, posicionCofre.y);
   textSize(20);
   fill(0);
-  text(distanciaLinkCofre, 10, 20);
+  text("Distancia entre Link y el Cofre: " + distanciaLinkCofre, 10, 20);
 }
